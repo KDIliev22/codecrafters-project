@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+body {
+    background-image: url('../misc/pictures/bg.jpg');
+    backdrop-filter: blur(3vw);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.topnav {
+    display: flex;
+    align-items: center;
+    height: 4.5vw;
+    background-color: rgba(30, 30, 30, 0.5);
+}
+
+.topnav a, #team {
+    float: left;
+    padding: 1vw;
+    color: whitesmoke;
+    text-align: center;
+    text-decoration: none;
+    font: 3.6vh 'Nova Square', cursive;
+}
+#team {
+    padding-left: 0;
+}
+#emblem {
+    height: 3vw;
+    width: 3vw;
+    margin-left: 1vw;
+}
+
+@keyframes hanim {
+    0% {color: rgb(30, 30, 30); }
+    100% {background-color: whitesmoke; border-radius: 15pt; color: rgb(30, 30, 30)}
+}
+.topnav a:hover {
+    animation: hanim 0.5s forwards ;
+  }
+
+.mainsec {
+    flex-grow: 1;
+}
+
+.mainsec,
+.desc h1, h2, h3 {
+    font: 4.5vw 'Nova Square', cursive;
+    color: whitesmoke;
+}
+
+desc {
+    margin-block: 3vh;
+    margin-inline: 3vw;;
+}
+.mainsec h2 {
+    font-size: 3vw;
+}
+
+.mainsec h3 {
+    font-size: 2vw;
+}
+
+.desc p, em {
+    display: flex;
+    margin-inline: 1vw;
+    font-size: 2vw;
+    color: whitesmoke;
+    font-family: 'Nova Square', cursive;
+    line-height: 2.3vw;
+}
+
+.mainsec p, em {
+    font-size: 3vw;
+    color: whitesmoke;
+    font-family: 'Nova Square', cursive;
+    line-height: 3.3vw;
+}
+
+.mainsec em {
+    margin-left: 2.5vw;
+    text-decoration: underline;
+}
+
+#headline {
+    font-family: 'Nova Square', cursive;
+    color: whitesmoke;
+    font-size: 3.4vw;
+    text-align: center;
+    margin: 15pt;
+    padding: 10pt;
+}
+
+.teamtable, .techused {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 80pt;
+    margin: 40pt auto;
+    padding-bottom: 3vh;
+}
+
+.teamtable, .techused h1, h2, h3, a {
+    font-family: 'Nova Square', cursive;
+    color: whitesmoke;
+    text-decoration: none;
+}
+.teamtable h1 {
+    font-size: 2.7vw;
+}
+.teamtable h3 {
+    font-size: 2vw;
+}
+
+.teamtable td, .techused td {
+    text-align: center;
+    column-width: 9999pt;
+}
+.techused td {
+    line-height: 25vh;
+}
+.teamtable img {
+    width: 16.15vw;
+    height: 42.6vh;
+    border-radius: 2.5vh;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 3vw;
+}
+
+.end h1 {
+    font-size: 14vh;
+    font-family: 'Nova Square', cursive;
+    color: whitesmoke;
+}
+
+.topnav a:last-child {
+    margin-left: auto;
+    font-size: 3vw;
+    padding-block: 0.5vw;
+}
+
+.techused i {
+    color: whitesmoke;
+    font-size: 20vh;
+}
+.techused img {
+    height: 20vh;
+}
+
+.teamtable a, td, th {
+    font-size: 2.2vw;
+}
+
+.email a {
+    background-color: whitesmoke;
+    padding: 5pt;
+    border-radius: 1.5vh;
+    color: black;
+}
+
+#heading {
+    margin-inline: 4vw;
+}
+
+.mainsec.intro,
+.intro,
+.gifcont,
+.desc{
+    opacity: 0;
+    transform: translateY(50px); /* Initial position below the viewport */
+    animation: fadeUpAnimation 2s forwards;
+}
+.intro p {
+    opacity: 0.6;
+    margin-inline: 10vw;
+    text-align: center;
+}
+.gifcont,
+.rdev,
+.desc,
+.teamtable,
+.techused {
+    background-color: #091622b7;
+    border-radius: 2.5vh;
+    margin-inline: 1vw;
+    padding-inline: 1vw;
+    padding-bottom: 3vh;
+    backdrop-filter: blur(0.5vh);
+    z-index: 1;
+}
+.intro {
+    justify-content: center;
+}
+.gifcont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1vw;
+        padding: 1vw;
+        width: auto;
+        height: 100vh;
+        z-index: 1;
+}
+
+.gifcont video {
+    border-radius: 2.5vh;
+    max-width: auto;
+    max-height: 100vh;
+}
+.gifcont p {
+    position: fixed;
+    color: whitesmoke;
+    margin: 30pt;
+    padding-bottom: 0;
+    font-size: 3vw;
+    font-family: 'Nova Square', cursive;
+}
+.end img {
+    max-height: 25vh;
+    max-width: auto;
+    margin-bottom: 0px;
+}
+.mainsec img {
+    max-width: 90vw;
+    max-height: auto;
+}
+.desc img,
+.rdev img {
+    display: block;
+    margin-block: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2.5vw;
+    max-width: 50vw;
+    max-height: auto;
+    margin-bottom: 4vh;
+}
+.desc #heading {
+    margin: 30px;
+}
+.desc iframe {
+    border-radius: 2.5vh;
+    margin-block: 2vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    height: 90vh;
+}
+/* Logo Carousel */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.logos {
+    overflow: hidden;
+    padding: 60px 0;
+    white-space: nowrap;
+    position: relative;
+    background-color: #08131db7
+}
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    z-index: 2;
+}
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+.logos-slide img {
+    height: 90px;
+    margin: 0 30px;
+}
+/* Fade In */
+@keyframes fadeUpAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
